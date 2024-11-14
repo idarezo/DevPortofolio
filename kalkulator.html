@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="kalkulator.css" />
+    <script src="kalkulator.js"></script>
+    <script
+      src="https://kit.fontawesome.com/a421fea63b.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://kit.fontawesome.com/a421fea63b.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet">    
+    <title></title>
+  </head>
+  <body>
+
+   
+<table id="table">
+
+    <tr>
+        <td colspan="4" id="resultColumn"></td>
+    </tr>
+
+    <tr id="signs">
+        <td onclick="onOperatorClick('+')" class="stylingKeyboard stylingSigns" ><i class="fa-solid fa-plus" id="+"></i></td>
+        <td onclick="onOperatorClick('-')" class="stylingKeyboard stylingSigns"><i class="fa-solid fa-minus" id="-"></i></td>
+        <td onclick="onOperatorClick('*')" class="stylingKeyboard stylingSigns"><i class="fa-solid fa-xmark" id="*"></i></td>
+        <td onclick="onOperatorClick('/')" class="stylingKeyboard stylingSigns"><i class="fa-solid fa-divide" id="%"></i></td>
+    </tr>
+
+    <tr  class="stylingKeyboard " id="firstRow">
+        <td onclick="onNumberClick('7')" class="stylingKeyboard tryout" data-value="7">7</td>
+        <td onclick="onNumberClick('8')"class="stylingKeyboard tryout">8</td>
+        <td onclick="onNumberClick('9')"class="stylingKeyboard tryout">9</td>
+        <td onclick ="calculate()"rowspan="2" style = "background-color: tomato;" class="stylingKeyboard" id="equalSign"> <i class="fa-solid fa-equals"></i> </td>
+    </tr>
+   
+    <tr class="stylingKeyboard" id="secondRow">
+        <td onclick="onNumberClick('4')" class="stylingKeyboard tryout">4</td>
+        <td onclick="onNumberClick('5')"class="stylingKeyboard tryout">5</td>
+        <td onclick="onNumberClick('6')"class="stylingKeyboard tryout">6</td>
+    </tr>
+
+    <tr  class="stylingKeyboard" id="thirdRow"  >
+        <td onclick="onNumberClick('1')" class="stylingKeyboard tryout">1</td>
+        <td onclick="onNumberClick('2')"class="stylingKeyboard tryout">2</td>
+        <td onclick="onNumberClick('3')"class="stylingKeyboard tryout">3</td>
+        <td class="stylingKeyboard tryout" style = "background-color: tomato;">)</td>
+    </tr>
+
+    <tr  class="stylingKeyboard" id="fourthRow">
+        <td onclick="onNumberClick('0')" class="stylingKeyboard tryout">0</td>
+        <td onclick="onNumberClick('.')" class="stylingKeyboard tryout">.</td>
+        <td onclick="onResetClick()" class="stylingKeyboard tryout">C</td>
+        <td class="stylingKeyboard tryout" style = "background-color: tomato;">(</td>
+    </tr>
+</table>
+
+  </body>
+</html>
